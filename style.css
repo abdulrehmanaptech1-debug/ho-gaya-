@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #212529;
+}
+
+/* Logo Styling */
+.my-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar-nav {
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: #555;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Card Image Hover Effect */
+.card img.card-img-top:hover {
+  border: 5px solid rgb(56, 160, 87);
+  border-radius: 20px;
+  transition: 0.2s ease;
+  transform: scale(1);
+}
+
+/* Ensuring Responsive Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flexbox for Card Layouts */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+/* Spacing for Sections */
+.container {
+  margin-top: 30px;
+}
+
+.my-5 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Mobile First Flexbox for Columns */
+.col-lg-4, .col-md-6, .col-lg-6 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Responsive Grid for Products */
+@media (max-width: 992px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-4, .col-md-6 {
+    width: 100%;
+  }
+  .my-logo img {
+    width: 80%;
+  }
+}
+
+/* Additional Fine-Tuning for Various Screen Sizes */
+@media (max-width: 576px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav {
+    margin-top: 20px;.g-5, .gy-5 {
+    --bs-gutter-y: 3rem;
+    color: #087342;
+}
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}.g-5, .gy-5 {
+    --bs-gutter-y: 3rem;
+   
+    color: #1e7395;
+}
+:root {
+    --footer-bg: #114d4a;
+}
+
+.custom-footer {
+    background-color: var(--footer-bg);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.custom-footer h5,
+.accordion-header button {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff !important;
+}
+
+.custom-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-footer ul li {
+    margin-bottom: 10px;
+}
+
+.custom-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.custom-footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Mobile Accordion */
+.footer-mobile .accordion-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-mobile .accordion-button {
+    background: transparent;
+    padding: 15px 0;
+    box-shadow: none;
+}
+
+.footer-mobile .accordion-button::after {
+    filter: invert(1) brightness(2);
+}
+
+.footer-mobile .accordion-button:not(.collapsed) {
+    background: transparent;
+}
+
+.footer-mobile .accordion-body {
+    padding: 0 0 15px 0;
+}
+
+.footer-address-mobile {
+    padding-top: 20px;
+}
+
+/* Desktop spacing */
+@media (min-width: 992px) {
+    .custom-footer {
+        padding: 60px 0;
+    }
+}.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
